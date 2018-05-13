@@ -68,7 +68,7 @@ inputs:
     opts:
       title: "Password"
       description: Password for the specified Apple ID.
-      is_required: true
+      is_required: false
   - app_password: ""
     opts:
       title: "Application Specific Password"
