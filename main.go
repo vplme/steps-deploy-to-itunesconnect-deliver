@@ -114,10 +114,6 @@ func (configs ConfigsModel) validate() error {
 		return fmt.Errorf("ItunesconUser %s", err)
 	}
 
-	if err := input.ValidateIfNotEmpty(configs.Password); err != nil {
-		return fmt.Errorf("Password %s", err)
-	}
-
 	if configs.AppID == "" && configs.BundleID == "" {
 		return errors.New("no AppID or BundleID parameter specified")
 	}
